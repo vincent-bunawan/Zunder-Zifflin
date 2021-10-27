@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/formstyle.css">
+    <script src="../script/form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="../asset/Zunder Zifflin Logo.png" width="100px">
+            <!-- <h1>Zunder Zifflin Inc.</h1> -->
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="homePage.html">Home</a>
+                    <li>
+                        <a href="productPage.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                        <ul>
+                            <li>
+                                <a href="compProfile.html">Company Profile</a>
+                            </li>
+                            <li>
+                                <a href="staffProfile.html">Staff Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contactusPage.html">Contact Us</a>
+                    </li>
+                    <li><a href="registerPage.html">Registration</a></li>
+                            
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <center>
+                <form action="formdataPage.html" id="register">
+                    <h2>Registration Form</h2>
+                    <br> <br>
+                    <table>
+                        <!-- name -->
+                        <tr>
+                        <td> Name </td>
+                        <td> 
+                            <input type="text" name="nameTxt" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                            <td><br></td>
+                        </tr>
+                        <!-- email  -->
+                        <tr>
+                            <td> Email </td>
+                            <td> 
+                                <input type="email" name="emailTxt">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                            <td><br></td>
+                        </tr>
+                        <!-- Gender -->
+                        <tr>
+                            <td> Gender</td>
+                            <td> 
+                                <input type="radio" name="genderTxt" value="Male" id="male"> 
+                                <label for="male">Male</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> 
+                                <input type="radio" name="genderTxt"value="Female"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                            <td><br></td>
+                        </tr>
+                       <!-- address -->
+                       <tr>
+                           <td>Address</td>
+                           <td>
+                               <input type="text" name="addressTxt">
+                           </td>
+                       </tr>
+                       <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                       <!-- city -->
+                       <tr>
+                        <td>City</td>
+                        <td>
+                            <input type="text" name="cityTxt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                        <!-- Agree -->
+                        <tr>
+                            <td colspan="2"> 
+                                <input type="checkbox" name="agree" value="true" id="agree" required name="terms"> 
+                                <label for="agree">I agree to the term and conditions </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p id="errorMessage"></p>
+                            </td>
+                        </tr>
+                       
+                        <!-- Button -->
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">
+                                    Register
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+
+        <div class="footer">
+            <p>Copyright© 2021 Zunder Zifflin Inc.</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
+

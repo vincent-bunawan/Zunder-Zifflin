@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}   
+body{
+    background: rgb(0,189,208);
+    background: linear-gradient(180deg, rgba(0,189,208,1) 0%, rgba(4,106,158,1) 17%, rgba(5,76,140,1) 28%, rgba(6,55,127,1) 37%, rgba(28,33,105,1) 62%, rgba(42,18,90,1) 76%, rgba(42,18,90,1) 85%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+div .navbar{
+    font-family: 'Bebas neue';
+   display: inline;
+}
+.header{
+    /* position: fixed; */
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+
+    color: white;
+}
+.header>img{
+    position: relative;
+    left: 30px;
+}
+.header .navbar a{
+    color: white;
+}
+.navbar>ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.navbar>ul li{
+    position: relative;
+    flex: 1;
+    list-style: none;
+}
+.navbar>ul li a{
+    font-size: larger;
+    text-decoration: none;
+    padding: 15px 5px;
+    display: block;
+}
+.navbar>ul>li>ul{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+.navbar ul li:hover{
+    background-color: #1e0b46;
+}
+.navbar>ul>li:hover>ul{
+    display: block;
+    background-color: rgb(233, 233, 233);
+}
+.navbar>ul>li:hover>ul a{
+    
+    color: black;   
+}
+.navbar>ul>li>ul a:hover{
+    background-color: rgb(197, 197, 197);
+}
+@media(max-width: 800px){
+    .navbar>ul{
+        display: block;
+    }
+    .navbar>ul>li>ul{
+        position: relative;
+    }
+    .content .advantage{
+        text-align: center;
+        max-width: 500px;
+        padding: 5px;
+        min-width: 350px;
+    }
+    .content .advantage .advList{
+        min-width: 200px;
+    }
+    .content .products{
+        max-width: 500px;
+        min-width: 350px;
+    }
+    .content #containSlider #slider{
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+.content{
+    margin: 10px 25px 0px 25px;
+    color: white;
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+#raquo,#laquo {
+	border:none;
+	padding:1% 1.5%;
+	color:rgb(0, 23, 71);
+	background-color:rgb(255, 255, 255);
+	text-align:center;
+	cursor:pointer;
+	font-weight: bold;
+	outline: none;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 3%;
+	font-size: 24px;
+	border-radius: 100%;
+   
+}
+#raquo:active,#laquo:active {
+	opacity: 0.2;
+}
+#raquo:active:after,#laquo:active:after {
+	opacity: 1;
+}
+#slider {
+display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  margin-bottom: 5%;
+  margin-top: 1%;
+  vertical-align: middle;
+}
+#slider div.slides {
+  position: relative;
+  width: 80%;
+}
+#slider div.slides div.slide {
+  display: block;
+  float: left;
+}
+.content .products{
+    background-color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .products h2{
+    color: black;
+    text-align: center;
+
+}
+.content .products .image{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+}
+
+.advantage{
+    margin: 12.5px 0px 12.5px 0px;
+    padding: 30px 250px 30px 250px;
+    color: black;
+    text-align: center;
+    background-color:  white;
+}
+.advantage .advList{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 15px;
+    background-color: #167a61cb;
+}
+
+.footer{
+    padding: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
